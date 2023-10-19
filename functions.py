@@ -4,14 +4,15 @@
 # ie: passing Atkinson as the parameter would return nosniktA
 def reverseName(myName):
   # Write your code here
-  
-  result = myName
+  result = ''
+  for i in range(len(myName)):
+      result += myName[-1 * (i + 1)] 
   return result
 
 # Returns a float value that is the contents of the myAge variable square rooted
 # ie: passing 16 as the parameter would return 4.0
 def rootAge(myAge):
+  import math
   # Wrie your code here
-  
-  result = myAge
+  result = math.sqrt(int(myAge))
   return result
