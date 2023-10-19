@@ -4,9 +4,7 @@
 # ie: passing Atkinson as the parameter would return nosniktA
 def reverseName(myName):
   # Write your code here
-  result = ''
-  for i in range(len(myName)):
-      result += myName[-1 * (i + 1)] 
+  result = myName[::-1]
   return result
 
 # Returns a float value that is the contents of the myAge variable square rooted
